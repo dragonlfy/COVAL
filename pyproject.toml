@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coval-clinical"
+version = "0.1.0"
+description = "Minimal reference implementation of concept-consistent view learning"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "torch>=2.0,<3",
+    "rtdl_num_embeddings>=0.0.12,<0.1",
+    "tabm>=0.0.3,<0.1",
+]
+
+[tool.setuptools.packages.find]
+include = ["coval*"]
